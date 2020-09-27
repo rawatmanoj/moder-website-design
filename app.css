@@ -56,13 +56,17 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
+  color: white;
+  text-shadow: 0 1px 5px black;
+}
+
+.img-1-content > i {
+  font-size: 60px;
 }
 
 .title {
-  color: white;
   font-size: 70px;
   text-align: center;
-  text-shadow: 0 1px 5px black;
 }
 
 .custom-btn {
@@ -80,8 +84,19 @@ body {
 }
 
 .custom-btn:hover {
-  opacity: .9;
+  background-color: #84a9ac;
   box-shadow: 0px 3px 15px black;
+  transition: all .4s ease;
+}
+
+.custom-btn > a {
+  all: unset;
+  color: white;
+}
+
+.custom-btn > a:hover {
+  all: unset;
+  color: white;
 }
 
 .section {
@@ -108,6 +123,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .review {
@@ -161,7 +177,7 @@ body {
   color: #3d3d3d;
   background-color: #fff;
   text-align: center;
-  padding: 40px;
+  padding: 40px 5px;
   font-size: 50px;
   text-transform: uppercase;
 }
@@ -242,4 +258,98 @@ li {
   z-index: 2;
   right: 0;
   top: 20%;
+}
+
+
+/********** ADVENTURES **********/
+
+.adventures {
+  min-height: 100vh;
+  background-color: #efefef;
+  text-align: center;
+  padding: 20px;
+}
+
+.adv-heading {
+  color: #3b6978;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.quotes {
+  font-size: 30px;
+  color: #84a9ac;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.quotes-sign {
+  font-size: 70px;
+  color: #3b6978;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.author {
+  font-size: 20px;
+  color: #3b6978;
+  font-weight: 600;
+}
+
+/*********** ADVENTURE FEATURES **********/
+
+.adv-features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.adv-feature-element {
+  padding: 20px;
+  width: 250px;
+  background-color: #84a9ac;
+  border-radius: 5px;
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.adv-feature-element:hover {
+  transform: translateY(-10px);
+}
+
+.adv-feature-element > i {
+  font-size: 60px;
+}
+
+.adv-feature-element > h3 {
+  border-bottom: 1px white solid;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 0;
+  color: #204051;
+}
+
+
+/********** MEDIA QUERIES **********/
+
+@media (max-width: 768px) {
+  .tours {
+    height: unset;
+    flex-direction: column;
+  }
+
+  .tours-img {
+    position: unset;
+    margin-bottom: 20px;
+  }
+
+  .quotes-sign {
+    display: block;
+  }
+
+  .quotes-sign:last-child {
+    display: none;
+  }
 }
