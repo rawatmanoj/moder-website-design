@@ -122,3 +122,74 @@ body {
 .review__person {
   margin-left: 2rem;
 }
+
+.adventures-img-1 {
+  background-image: url('https://images.unsplash.com/photo-1471247511763-88a722fc9919?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80');
+}
+
+.adventures-img-2 {
+  background-image: url('https://images.unsplash.com/photo-1593570555414-c614730c9a85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80');
+}
+
+.adventures-img-3 {
+  background-image: url('https://images.unsplash.com/photo-1529573603507-70ad30917905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+}
+
+.adventures-img-1, .adventures-img-2, .adventures-img-3 {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.adventures-section {
+  color: #3d3d3d;
+  background-color: #fff;
+  text-align: center;
+  padding: 40px;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.tours {
+  position: relative;
+  height: 120vh;
+}
+
+.tours-img {
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 55%;
+  transition: transform .4s ease;
+  border-radius: 8px;
+}
+
+.tours-img-1 {
+  background-image: url('https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80');
+  z-index: 1;
+  left: 20%;
+  top: 10%;
+}
+
+.tours-img-2 {
+  background-image: url('https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+  z-index: 3;
+  left: 40%;
+  top: 30%;
+}
+
+.tours-img-3 {
+  background-image: url('https://images.unsplash.com/photo-1584891753006-ae9c155dc59a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+  z-index: 2;
+  left: 60%;
+  top: 20%;
+}
+
+.tours-img:hover {
+  transform: scale(1.1) translateY(5px);
+  z-index: 100;
+}
