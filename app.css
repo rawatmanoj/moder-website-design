@@ -1,3 +1,12 @@
+/**
+palette - 
+  black - #3d3d3d
+  navy blue - #204051
+  dark blue - #3b6978
+  blue - #84a9ac
+  light blue - #cae8d5
+**/
+
 body {
   font-family: Lato, sans-serif;
   margin: 0;
@@ -40,38 +49,39 @@ body {
   background-repeat: no-repeat;
 }
 
-.img-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
+.img-1-content {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: white;
-  font-size: 70px;
   text-align: center;
 }
 
-.btn-explore {
-  font-family: Lato, sans-serif;
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  border-radius: 0.4rem;
+.title {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  text-shadow: 0 1px 5px black;
+}
+
+.custom-btn {
+  margin-top: 4rem;
+  border-radius: 5rem;
   font-size: 1.2rem;
-  height: 2.4rem;
-  padding: 0 0.8rem 0 0.8rem;
+  padding: 1rem 3rem;
   border: none;
   outline: none;
   color: white;
-  background-color: #218838;
-  text-align: center;
+  background-color: #3b6978;
+  cursor: pointer;
+  box-shadow: 0 1px 5px black;
+  transition: all .4s ease;
+}
+
+.custom-btn:hover {
+  opacity: .9;
+  box-shadow: 0px 3px 15px black;
 }
 
 .section {
@@ -91,36 +101,38 @@ body {
   --color-grey-light: #d9dcd6;
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.05);
 }
-.codepen-wrapper {
-  height: 100vh;
-  background-color: var(--color-grey-light);
-  display: flex;
 
+.reviews-section {
+  height: 100vh;
+  background-color: #3d3d3d;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .review {
   width: 20rem;
-  background-color: lightblue;
+  background-color: #84a9ac;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.review__text {
-  font-family: Lato, sans-serif;
-}
-
-.review__photo {
+.review-img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
 }
 
-.review__info {
+.review-person {
   font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.review__person {
-  margin-left: 2rem;
+.review-person p {
+  margin: 3px 0;
 }
 
 .adventures-img-1 {
@@ -155,32 +167,44 @@ body {
 }
 
 .tours {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #cae8d5, #3b6978);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.tours-info {
+  flex-grow: 1;
+  color: white;
+  padding-right: 20px;
+}
+
+.tours-heading {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.tours-img-container {
   position: relative;
-  height: 120vh;
+  flex: 700px 0 0;
+  height: 100%;
 }
 
-.tours-img-1 {
-  background: url("./images/camp.jpg");
-
-  z-index: 1;
-  left: 20%;
-  top: 10%;
+.tours-details {
+  font-size: 18px;
 }
 
-.tours-img-2 {
-  background: url("./images/hike.jpg");
-
-  z-index: 3;
-  left: 40%;
-  top: 30%;
+ul {
+  padding-left: 20px;
+  font-size: 18px;
 }
 
-.tours-img-3 {
-  background: url("./images/night.jpg");
-
-  z-index: 2;
-  left: 60%;
-  top: 20%;
+li {
+  margin-bottom: 10px;
 }
 
 .tours-img {
@@ -188,8 +212,8 @@ body {
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
-  height: 55%;
+  width: 300px;
+  height: 400px;
   transition: transform 0.4s ease;
   border-radius: 8px;
 }
@@ -197,4 +221,25 @@ body {
 .tours-img:hover {
   transform: scale(1.1) translateY(5px);
   z-index: 100;
+}
+
+.tours-img-1 {
+  background-image: url("./images/camp.jpg");
+  z-index: 1;
+  right: 400px;
+  top: 10%;
+}
+
+.tours-img-2 {
+  background-image: url("./images/hike.jpg");
+  z-index: 3;
+  right: 180px;
+  top: 30%;
+}
+
+.tours-img-3 {
+  background-image: url("./images/night.jpg");
+  z-index: 2;
+  right: 0;
+  top: 20%;
 }
