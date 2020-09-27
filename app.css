@@ -312,6 +312,7 @@ li {
   border-radius: 5px;
   color: white;
   transition: .2s all ease-in-out;
+  margin-bottom: 20px;
 }
 
 .adv-feature-element:hover {
