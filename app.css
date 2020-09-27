@@ -40,6 +40,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.img-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   position: absolute;
   left: 50%;
@@ -48,6 +54,23 @@ body {
   z-index: 1;
   color: white;
   font-size: 70px;
+  text-align: center;
+}
+
+.btn-explore {
+  font-family: Lato, sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  height: 2.4rem;
+  padding: 0 0.8rem 0 0.8rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #218838;
   text-align: center;
 }
 
@@ -61,4 +84,41 @@ body {
 .section-light {
   color: #3d3d3d;
   background-color: #fff;
+}
+
+:root {
+  --color-grey-dark: #323031;
+  --color-grey-light: #d9dcd6;
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.05);
+}
+.codepen-wrapper {
+  height: 100vh;
+  background-color: var(--color-grey-light);
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  width: 20rem;
+  background-color: lightblue;
+}
+
+.review__text {
+  font-family: Lato, sans-serif;
+}
+
+.review__photo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.review__info {
+  font-size: 0.8rem;
+}
+
+.review__person {
+  margin-left: 2rem;
 }
