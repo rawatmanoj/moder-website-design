@@ -7,25 +7,25 @@ body {
 
 .img-1 {
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1498855926480-d98e83099315?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-image: url("./images/back1.jpg");
   background-position: center;
 }
 
 .img-2 {
   height: 50vh;
-  background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  background-image: url("./images/back2.jpg");
   background-position: center;
 }
 
 .img-3 {
   height: 50vh;
-  background-image: url("https://images.unsplash.com/photo-1505245208761-ba872912fac0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-image: url("./images/back3.jpg");
   background-position: center;
 }
 
 .img-4 {
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80");
+  background-image: url("./images/back4.jpg");
   background-position: top;
 }
 
@@ -124,18 +124,20 @@ body {
 }
 
 .adventures-img-1 {
-  background-image: url('https://images.unsplash.com/photo-1471247511763-88a722fc9919?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80');
+  background-image: url("./images/paraglid.jpg");
 }
 
 .adventures-img-2 {
-  background-image: url('https://images.unsplash.com/photo-1593570555414-c614730c9a85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80');
+  background-image: url("./images/scooba.jpg");
 }
 
 .adventures-img-3 {
-  background-image: url('https://images.unsplash.com/photo-1529573603507-70ad30917905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+  background-image: url("./images/bungi.jpg");
 }
 
-.adventures-img-1, .adventures-img-2, .adventures-img-3 {
+.adventures-img-1,
+.adventures-img-2,
+.adventures-img-3 {
   height: 100vh;
   background-attachment: fixed;
   background-size: cover;
@@ -157,36 +159,39 @@ body {
   height: 120vh;
 }
 
-.tours-img {
-  background-size: cover;
-  background-position: bottom;
-  position: absolute;
-  background-repeat: no-repeat;
-  width: 30%;
-  height: 55%;
-  transition: transform .4s ease;
-  border-radius: 8px;
-}
-
 .tours-img-1 {
-  background-image: url('https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80');
+  background: url("./images/camp.jpg");
+
   z-index: 1;
   left: 20%;
   top: 10%;
 }
 
 .tours-img-2 {
-  background-image: url('https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+  background: url("./images/hike.jpg");
+
   z-index: 3;
   left: 40%;
   top: 30%;
 }
 
 .tours-img-3 {
-  background-image: url('https://images.unsplash.com/photo-1584891753006-ae9c155dc59a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+  background: url("./images/night.jpg");
+
   z-index: 2;
   left: 60%;
   top: 20%;
+}
+
+.tours-img {
+  background-position: bottom;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 55%;
+  transition: transform 0.4s ease;
+  border-radius: 8px;
 }
 
 .tours-img:hover {
