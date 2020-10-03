@@ -377,12 +377,16 @@ li {
   color: #3b6978;
   padding: 10px;
   border-radius: 10px;
+  font-weight: 400;
 }
 
 .review-img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  transition: all .3s ease-in;
 }
 
 .review-person {
@@ -390,6 +394,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 400;
 }
 
 .review-person p {
